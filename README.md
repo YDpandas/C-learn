@@ -1,3 +1,3 @@
-这里是pandaYDs的C语音学习笔记
+这里是pandaYDs的C语言学习笔记
 
-Let's Goooooo!# C-learn
+Let's Goooooo!

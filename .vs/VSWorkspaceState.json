@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\C_Test",
+    "\\C_Test\\Project2_18"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\C_Test\\Project2_18\\main.c",
   "PreviewInSolutionExplorer": false
 }

@@ -970,25 +970,84 @@
 
 
 
-int main(int argc, char* argv[]) {
-	double a, eps, x0, x1, z;
-	int count;
-	scanf("%lf,%lf", &a, &eps);
-	x0 = a / 2;
-	for (count = 1;; count++) {
-		x1 = 0.5 * (x0 + a / x0);
-		z = x1 - x0;
-		if (z < 0) {
-			z = -z;
-		}
-		if (z < eps) {
-			break;
-		}
-		if (z > eps) {
-			x0 = x1;
-		}
+//int main(int argc, char* argv[]) {
+//	double a, eps, x0, x1, z;
+//	int count;
+//	scanf("%lf,%lf", &a, &eps);
+//	x0 = a / 2;
+//	for (count = 1;; count++) {
+//		x1 = 0.5 * (x0 + a / x0);
+//		z = x1 - x0;
+//		if (z < 0) {
+//			z = -z;
+//		}
+//		if (z < eps) {
+//			break;
+//		}
+//		if (z > eps) {
+//			x0 = x1;
+//		}
+//
+//	}
+//	printf("%.4lf %d", (x1 + x0) / 2, count);
+//	return 0;
+//}
 
-	}
-	printf("%.4lf %d", (x1 + x0) / 2, count);
-	return 0;
-}
+//
+//#include<stdio.h>
+//#include<math.h>
+//int main() {
+//    bool isPrime(int x);
+//    int x;
+//    scanf("%d", &x);
+//    if (isPrime(x)) {
+//        printf("True");
+//    }
+//    else {
+//        printf("False");
+//    }
+//    return 0;
+//}
+//bool isPrime(int x) {
+//    if (x == 1 || x == 2) {
+//        return true;
+//    }
+//    for (int i = 2; i <= sqrt(x); i++) {
+//        if (x % i == 0) {
+//            return false;
+//        }
+//    }
+//    return true;
+//}
+
+
+//#include<stdio.h>
+//#include<math.h>
+//int main() {
+//    void funA(int x);
+//    int x;
+//    scanf("%d", &x);
+//    int i;
+//    for (i = 1;; i++) {
+//        int num = x / pow(10,i);
+//        if (num == 0) {
+//            break;
+//        }
+//    }
+//    printf("%d", i);
+//    //funA(x);
+//    return 0;
+//}
+////void funA(int x) {
+////    int i;
+////    //for (i = 1;; i++) {
+////    //    if (x / (pow(10, i)) == 0) {
+////    //        break;
+////    //    }
+////    //}
+////    //printf("%d", i);
+////}
+
+
+
+

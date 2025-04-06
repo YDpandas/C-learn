@@ -1048,6 +1048,92 @@
 ////    //printf("%d", i);
 ////}
 
+//编写一个函数，从一组数中找出其中的奇数。
+//要求从键盘输入n, 表示数组元素个数，再依次输入数组元素内容，通过调用函数，查找其中的奇数，并输出。
+//输入举例：
+//5
+//5 6 8 9 2
+//输出举例：
+//奇数数组为：5, 9
+
+
+//#include<stdio.h>
+//#include<stdlib.h>
+//int* odd(int n, int* num);
+//int main() {
+//    int n;
+//    int* oddold;
+//    scanf("%d", &n);
+//    oddold = (int*)malloc(n * sizeof(int));
+//    for (int i = 0; i < n; i++) {
+//        scanf("%d", &oddold[i]);
+//    }
+//    int* oddnew = odd(n, oddold);
+//    free(oddold);
+//    printf("奇数数组为：");
+//    for (int j = 0; j < sizeof(oddnew) / sizeof(oddnew[0]); j++) {
+//        printf("%d", oddnew[j]);
+//        if (j < sizeof(oddnew) / sizeof(oddnew[0]) - 1) {
+//            printf(",");
+//        }
+//    }
+//    return 0;
+//}
+//int* odd(int n, int* num) {
+//    int m = 0;
+//    int* returnNum;
+//    returnNum = (int*)malloc(n * sizeof(int));
+//    for (int k = 0; k < n; k++) {
+//        if (num[k] % 2 != 0) {
+//            returnNum[m] = num[k];
+//            m++;
+//        }
+//    }
+//    return returnNum;
+//}
 
 
 
+//从键盘输入n，通过调用函数，输出大于n的连续6个素数。
+//输入举例：
+//10
+//输出举例：
+//11 13 17 19 23 29
+
+//#include<stdio.h>
+//#include<math.h>
+//void isPrime(int n);
+//int main() {
+//    int n;
+//    scanf("%d", &n);
+//    isPrime(n);
+//    return 0;
+//}
+//void isPrime(int n) {
+//    int count = 0, re = 0;
+//    if (n < 2) {
+//        printf("2 ");
+//        count++;
+//    }
+//    for (int i = n;; i++) {
+//        for (int j = 2; j <= sqrt(i); j++) {
+//            if (i % j == 0) {
+//                re = 0;
+//                break;
+//            }
+//            else {
+//                re = 1;
+//            }
+//        }
+//        if (re) {
+//            printf("%d", i);
+//            count++;
+//            if (count < 6) {
+//                printf(" ");
+//            }
+//        }
+//        if (count == 6) {
+//            break;
+//        }
+//    }
+//}

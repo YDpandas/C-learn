@@ -1137,3 +1137,58 @@
 //        }
 //    }
 //}
+
+
+//int main(){
+//	int a, b; a = b = 10;
+//	printf("a=%d,b=%d\n", a, b);
+//	return 0;
+//}
+
+
+//#include<stdio.h>
+//
+//// 注意, 代码不会自动保存, 请手动点击保存按钮!
+//int main(int argLen, char** args) {
+//    int num, a, b, c;
+//    scanf("%d", &num);
+//    a = num / 100;
+//    b = (num / 10) % 10;
+//    c = num % 10;
+//    printf("%d %d %d", a, b, c);
+//    return 0;
+//}
+
+#include<stdio.h>
+int main() {
+    int a[20], b[20] = { 0 }, c[20] = { 0 };
+    int m = 0, n = 0;
+    for (int i = 0; i < 20; i++) {
+        scanf("%d", &a[i]);
+    }
+    for (int j = 0; j < 20; j++) {
+        if (a[j] % 2 != 0) {
+            b[m] = a[j];
+            m++;
+        }
+        else {
+            c[n] = a[j];
+            n++;
+        }
+    }
+    printf("奇数是");
+    for (int k = 0; b[k] != 0; k++) {
+        printf("%d", b[k]);
+        if (k != sizeof(b) / sizeof(b[0])) {
+            printf(" ");
+        }
+    }
+    printf("偶数是");
+        for (int l = 0; c[l] != 0; l++) {
+            printf("%d", c[l]);
+            if (l != sizeof(c) / sizeof(c[0])) {
+                printf(" ");
+            }
+        }
+    return 0;
+}
